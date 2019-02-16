@@ -1,0 +1,235 @@
+html, body, .container-content, .navigation{
+	height: 100vh;
+}
+.container-content{
+	background-image: linear-gradient(rgba(255,255,255,0.4), rgba(228,227,223,0.4)), url(../img/flower.jpg);
+	background-position: center center;	
+	background-size: cover;
+}
+.navigation{
+	background: #7E7F82;
+	margin: 0;
+	padding: 0;	
+}
+.flex-center-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-parent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.flex-child{
+	list-style: none;
+	width: 50%;
+	border: 0.2px solid #D1D2D4;
+	height: 33.3vh;	
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.flex-child a{
+	color: #A9E8DC;
+	text-decoration: none;
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+.flex-child a:hover{
+	color: #E4E3DF;
+	font-size: 40px;
+	border: 4px solid #02BEC4;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+.about, .services, .question, .contact, .map{	
+	display: none;
+	background: #f2f2f2;
+	height: 95%;
+	width: 95%;
+	margin: 1.5% auto;
+	padding: 50px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container-content{
+	flex-direction: column;
+}
+.container-content h1{
+	font-size: 65px;
+	margin: 0 0 50px 0;
+}
+.h-home{
+	color: #403F3E;
+}
+.p-home{
+	padding: 0 300px;
+	text-align: center;
+	font-size: 22px;
+	color: #615451;
+}
+.p-about{
+	margin-top: 50px;	
+	padding: 0 100px;
+	font-size: 22px;
+	color: #615451;
+}
+.first-p{
+	font-family: 'Cookie', cursive;
+	font-size: 50px;
+}
+.purple{
+	color: #A892A4;
+}
+.about .first-p{
+	padding-left: 100px;
+	text-align: left;
+	font-size: 50px;
+}
+.about h1, .services h1, .question h1, .contact h1, .map h1{
+	font-size: 65px;
+	margin: 80px 0 0 100px;
+}
+.gray-color{
+	color: #7E7F82;
+}
+.about p, .question p, .contact p, .map p {
+	font-size: 24px;
+}
+.no-margin{
+	margin: 0;
+}
+.no-padding{
+	padding: 0;
+}
+form{
+	max-width: 600px;
+	margin: 50px auto 0 auto;
+}
+form input, form textarea, form button{
+	margin-bottom: 20px;
+	border-radius: 0 !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;	
+}
+.uppercase, form label{
+	text-transform: uppercase;
+}
+.my-btn{
+	background: #D1B5AF;
+	color: #fff;
+	width: 100px;
+}
+.my-btn:hover{
+	background: #E0C2BC;
+}
+.subtitle{
+	font-family: 'Cookie', cursive;
+	margin-left: 100px; 
+	font-size: 35px;
+	color: #A892A4;
+}
+.contact-text{
+	flex-direction: column;
+	margin-top: 100px;
+	font-size: 18px;
+}
+.contact-text p{
+	font-size: 18px;
+}
+.services-column{
+	background: #ccc;
+	text-align: center;
+	padding:50px;
+	margin-top: 100px;
+	color: #fff;
+}
+.services i{
+	font-size: 50px;
+}
+.services h2{
+	text-transform: uppercase;
+	margin: 20px auto;
+}
+.different-column{
+	background: #D1B5AF;
+}
+.img-map{
+	width: 100%;
+	height: 550px;
+	margin-top: 50px;
+	background-image: url(../img/map.png);
+	background-size: cover;
+	background-position: center center;
+}
+@media only screen and (max-width: 1199px) {
+  	.navigation{	
+  		max-height: 100px !important;
+  	}  
+  	.container-content{	
+  		min-height: auto !important;
+  		padding: 100px 50px;
+  		max-height: 100% !important;
+  	}
+  	.about, .services, .question, .contact, .map{	
+  		min-height: auto !important;
+  		padding: 100px 50px;
+  		max-height: 100% !important;
+  	}  
+  	.flex-parent{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.flex-child{
+		border: 0.5px solid #D1D2D4;
+		height: 100px;		
+	}
+	.flex-parent{
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	.flex-child a{
+		font-size: 40px;
+	}
+	.flex-child a:hover{
+		font-size: 20px;
+		width: 70px;
+		height: 70px;
+	}
+	.p-home{
+		padding: 0 80px;
+	}
+}
+@media only screen and (max-width: 971px) {
+   	.about h1, .services h1, .question h1, .contact h1, .map h1{
+   		font-size: 30px;
+		margin: 20px 0 0 0;
+	}
+	.subtitle{
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 600px) {
+   	.flex-child a{
+		font-size: 30px;
+	}
+	.flex-child a:hover{
+		font-size: 15px;
+		width: 50px;
+		height: 50px;
+	}
+}
